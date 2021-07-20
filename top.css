@@ -1,0 +1,559 @@
+@charset "utf-8";
+/* CSS Document */
+/* common */
+*{
+outline: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address,
+figure,
+dl,
+dd {
+margin: 0;
+padding: 0;
+color: #400F00;
+}
+
+body {
+line-height: 1.7;
+}
+
+a {
+color: #212529;
+}
+
+a:hover {color: #8A8A8A
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-weight: normal;
+line-height: 1;
+}
+
+ol, ul, li {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+img, figure {
+max-width: 100%;
+height: auto;
+margin: 0;
+padding: 0;
+}
+
+/* -----------------------------------*/
+
+/*--------------- header fix -------------*/
+header .headerWrap {
+background-color: #FFFFFF;
+height: 3.5rem;
+}
+
+header.fix {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 3.5rem;
+z-index: 1000;
+}
+
+h1 a {
+display: block;
+padding-top: 2%;
+padding-left: 3%;
+width: 8rem;
+height: auto;
+}
+
+/*---------- nav btn ----------*/
+nav {
+position: absolute;
+top: 0;
+right: 1rem;
+z-index: 10000;
+}
+
+.btn {
+text-align: right;
+}
+
+.btn a {
+display: inline-block;
+font-size: 2rem;
+color: #400F00;
+}
+
+#g_menu {
+position: fixed;
+top: 0;
+width: 60%;
+height: 100%;
+background-color: #D3B083;
+z-index: 100000;
+padding: 0rem 1rem 0.5rem;
+}
+
+#g_menu:not(:target) {
+right: -100%;
+transition: right 1.5s;
+}
+
+#g_menu:target {
+right: 0;
+transition: right 1s;
+}
+
+#g_menu li {
+padding: 1rem;
+}
+#g_menu li i {
+font-size: 0.5rem;
+padding-right: 0.5rem;
+}
+
+#g_menu a {
+color: #400F00;
+}
+
+/*---------- main ----------*/
+main {
+padding-top: 3.5rem;
+}
+
+div#mainVisual {
+width: 100%;
+}
+
+
+#sec01,
+#sec02,
+#sec03,
+#sec04,
+#sec05 {
+padding-top: 3rem;
+background-color: #FFFFFF;
+}
+
+#sec01 h2,
+#sec02 h2,
+#sec03 h2,
+#sec04 h2 {
+font-size: 1.5rem;
+text-align: center;
+padding: 2rem 0rem;
+}
+
+
+/* pallax */
+.plx {
+position: -webkit-sticky; /* Safari */
+position: sticky;
+top: 3.5rem;
+z-index: -100;
+}
+/*---------- sec01 ----------*/
+#sec01 .wrap {
+width: 100%;
+padding: 0 0 2rem;
+}
+
+#sec01 div.p {
+padding: 0rem 1rem;
+
+}
+
+#sec01 p.ct {
+padding: 1rem 0rem;
+}
+
+/*---------- sec02 ----------*/
+ul.sec02 {
+display: flex;
+flex-wrap: wrap;
+}
+ul.sec02 li {
+width: 33%;
+height: auto;
+padding: 0.5rem;
+
+}
+
+/*---------- sec03 ----------*/
+#sec03 {
+width: 100%;
+padding: 0rem 10% 2rem;
+}
+
+#sec03 div.TT {
+display: flex;
+border-bottom: dotted;
+padding: 2%;
+}
+
+#sec03 dt {
+display: block;
+margin: auto;
+}
+
+#sec03 dd {
+padding: 2%;
+width: 80%;
+}
+
+
+/*---------- sec04 ----------*/
+
+.dt {
+padding: 1rem;
+}
+
+#sec04 img {
+width: 50%;
+padding-left: 2%;
+}
+
+#sec04 dl {
+padding-left: 2%;
+}
+
+.map {
+width: 100%;
+padding-bottom: 2rem;
+}
+
+.map iframe {
+width: 100%;
+height: 100%;
+border-width: 0;
+}
+
+/*---------- tel ----------*/
+#sec04 ul {
+padding: 0.5%;
+}
+
+#sec04 div.tel {
+padding: 2rem 4rem;
+}
+
+#sec04 ul.tel {
+display: flex;
+flex-direction: column;
+text-align: center;
+margin: auto;
+border: solid #5E5859;
+padding: 0.5rem 2rem;
+}
+#sec04 i {
+padding-right: 0.5rem;
+}
+
+/*---------- sns ----------*/
+.sns ul {
+display: flex;
+justify-content: space-around;
+width: 100%;
+padding: 0 10% 2rem;
+}
+
+.sns li {
+width: 15%;
+}
+
+
+
+/*---------- footer ----------*/
+footer {
+padding: 1rem 2rem;
+margin-top: 1rem;
+background-color: #D3B083;
+text-align: center;
+color: #FFFFFF;
+}
+
+@media screen and (min-width:768px){
+/*--------------- header fix -------------*/
+header .headerWrap {
+display: flex;
+align-items: center;
+height: 5rem;
+}
+
+header.fix {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 5rem;
+z-index: 1000;
+}
+
+h1 a {
+display: block;
+padding-top: 2%;
+padding-left: 6%;
+width: 12rem;
+height: auto;
+}
+
+/*---------- nav btn ----------*/
+nav {
+position: static;
+margin: 0 0 0 auto;
+padding: 0.5rem;
+top: 0;
+right: 1rem;
+z-index: 10000;
+}
+nav ul {
+display: flex;
+justify-content: flex-end;
+padding: 0.5rem 0 0;
+}
+
+.btn {
+display: none;
+}
+
+.btn a {
+display: inline-block;
+font-size: 2rem;
+color: #400F00;
+}
+
+#g_menu {
+position: static;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: #FFFFFF;
+padding: 0;
+}
+
+#g_menu li {
+padding: 0.5rem 1rem;
+}
+
+#g_menu a {
+color: #400F00;
+}
+
+/*---------- main ----------*/
+main {
+padding-top: 5rem;
+}
+
+div#mainVisual {
+width: 100%;
+}
+
+#sec01,
+#sec02,
+#sec03,
+#sec04 {
+padding-top: 6rem;
+background-color: #FFFFFF;
+}
+
+#sec01 h2,
+#sec02 h2,
+#sec03 h2,
+#sec04 h2 {
+font-size: 2rem;
+text-align: center;
+padding: 3rem 0rem;
+}
+
+/*---------- pallax風 ----------*/
+.plx {
+position: sticky;
+top: 5rem;
+z-index: -100;
+}
+.coment {
+position: absolute;
+top: 15rem;
+right: 0.5rem;
+width: 50%;
+background: rgba(255, 255, 255, 0.5);
+
+}
+
+
+/*---------- sec01 ----------*/
+#sec01 li {
+display: flex;
+}
+
+#sec01 li:nth-child(even) {
+flex-direction: row-reverse;
+}
+
+#sec01 .wrap {
+width: 50%;
+padding: 0 0 3rem;
+
+}
+
+#sec01 p {
+width: 50%;
+}
+
+#sec01 .wrap p {
+width: 100%;
+padding: 0.1rem 2rem;
+}
+
+
+
+/*---------- sec02 ----------*/
+ul.sec02 {
+display: flex;
+flex-wrap: wrap;
+}
+ul.sec02 li {
+width: 33%;
+height: auto;
+
+}
+
+/*---------- sec03 ----------*/
+.sec03 {
+width: 100%;
+padding: 0rem 20% 3rem;
+}
+
+/*---------- sec04 ----------*/
+.dt {
+padding: 1rem;
+}
+
+#sec04 ul {
+display: flex;
+justify-content: space-around;
+flex-direction: row-reverse;
+}
+
+#sec04 ul li {
+width: 50%;
+padding: 0.5%;
+vertical-align: top;
+}
+
+#sec04 img {
+width: 50%;
+padding-left: 2%;
+}
+.map {
+position: relative;
+padding-bottom: 75%;
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+
+.map iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+
+/*---------- tel ----------*/
+#sec04 div.tel {
+padding: 4rem 4rem 4rem 1.7rem;
+}
+
+#sec04 ul.tel {
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+width: 80%;
+margin: 0;
+border: solid #5E5859;
+padding: 0.5rem 2rem;
+}
+
+a[href^="tel:"] {
+pointer-events: none;
+text-decoration: none;
+}
+
+
+/*---------- sns ----------*/
+.sns ul {
+display: flex;
+justify-content: center;
+width: 100%;
+padding: 0 10% 4rem;
+}
+
+.sns li {
+width: 15%;
+padding: 2rem;
+}
+
+
+
+/*---------- footer ----------*/
+footer {
+padding: 1rem 2rem;
+margin-top: 2rem;
+background-color: #D3B083;
+text-align: center;
+color: #FFFFFF;
+}
+
+
+@media screen and (min-width:1280px){
+
+main {
+width: 80%;
+margin: 0 auto;
+}
+
+header.fix {
+background-color: #FFFFFF;
+}
+h1 a {
+top: 2%;
+left: 10%;
+}
+
+header .headerWrap {
+width: 80%;
+margin: 0 auto;
+background-color: #FFFFFF;
+height: 5rem;
+}
+.coment {
+position: absolute;
+top: 23rem;
+right: 0.5rem;
+width: 50%;
+background: rgba(255, 255, 255, 0.5);
+
+}
+
+
+}
+}
